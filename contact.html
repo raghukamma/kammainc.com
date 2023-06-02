@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Form - to get in touch with Raghu Kamma</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <main>
+      <h1>Contact Form - to get in touch with Raghu Kamma</h1>
+      <div>
+        <form action="#" class="form-setup">
+          <h2 class="form-setup-h2-class">Sign Up Form</h2>
+          <p class="form-setup-p-class">Fill up the items in the form below.</p>
+          <div class="input-boxes">
+            <label for="name">Name: </label>
+            <input type="text" name="name" id="name" class="text-name-input" />
+          </div>
+          <div class="input-boxes">
+            <label for="username">Username:</label>
+            <input
+              type="text"
+              name="username"
+              id="username"
+              class="text-username-input"
+            />
+          </div>
+          <div class="input-boxes">
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" class="email-input" />
+          </div>
+          <div class="input-boxes">
+            <label for="password">Password:</label>
+            <input
+              type="password"
+              name="password"
+              id="password"
+              class="password-input"
+            />
+          </div>
+          <div class="input-boxes">
+            <label for="date-of-birth">Date of birth:</label>
+            <input
+              type="date"
+              name="date-of-birth"
+              id="date-of-birth"
+              class="dob-input"
+            />
+          </div>
+          <fieldset class="fieldset-class">
+            <legend>Preferred Pronouns</legend>
+            <div class="pronouns">
+              <input
+                type="radio"
+                name="preferred-pronouns"
+                id="preferred-pronouns-she"
+                value="she/her"
+              />
+              <label for="preferred-pronouns-she">She/Her<z/label>
+            </div>
+            <div class="pronouns">
+              <input
+                type="radio"
+                name="preferred-pronouns"
+                id="preferred-pronouns-he"
+                value="he/him"
+              />
+              <label for="preferred-pronouns-he">He/Him</label>
+            </div>
+            <div class="pronouns">
+              <input
+                type="radio"
+                name="preferred-pronouns"
+                id="preferred-pronouns-they"
+                value="they/them"
+              />
+              <label for="preferred-pronouns-they">They/Them</label>
+            </div>
+            <div class="pronouns">
+              <input
+                type="radio"
+                name="preferred-pronouns"
+                id="prefer-not-to-say"
+                value="prefer-not-to-say"
+              />
+              <label for="prefer-not-to-say">I prefer not to say</label>
+            </div>
+          </fieldset>
+          <div>
+            <input type="submit" value="Submit" class="btn-primary" />
+            <input type="reset" value="Reset" class="btn-secondary" />
+          </div>
+        </form>
+      </div>
+    </main>
+  </body>
+</html>
