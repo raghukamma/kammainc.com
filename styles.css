@@ -1,0 +1,135 @@
+:root {
+  --yellow: #f9ca24;
+  --black: #080808;
+  --white: #fefefe;
+  --gray: #565656;
+  --teal: #006060;
+  --violetred: #a2106d;
+  --orange: #ffa500;
+  --lightgray: #e8e8e8;
+  --red: #ff0000;
+}
+
+.body-index .header-index .navigation-bar .nav-list .navlist-item {
+  text-decoration: none;
+}
+
+.navlist-item {
+  text-decoration: none;
+}
+
+/* i need to remove underscore on all the navlist items in my navbar */
+
+.header-index img {
+  width: 15rem;
+  height: 15rem;
+  border-radius: 50%;
+  border: 2px solid #fff;
+}
+
+/* Code for styling the contact.html */
+form {
+  width: 400px;
+}
+
+.form-setup {
+  border-radius: 8px;
+  padding: 10px;
+  border: 1px solid var(--black);
+  text-align: left;
+  font-weight: bold;
+  margin: 0 auto;
+}
+
+.fieldset-class {
+  border: 0 none;
+  text-align: left;
+  margin: 10px 0px;
+  padding: 0%;
+}
+
+.text-username-input {
+  width: 60%;
+  padding: 3px;
+  margin-left: 39px;
+  margin-bottom: 15px;
+  border: 1px solid var(--black);
+}
+
+.text-name-input {
+  margin-left: 80px;
+  width: 60%;
+  padding: 3px;
+  margin-bottom: 15px;
+  border: 1px solid var(--black);
+}
+
+.email-input {
+  width: 60%;
+  padding: 3px;
+  margin-left: 83px;
+  margin-bottom: 15px;
+  border: 1px solid var(--black);
+}
+
+.password-input {
+  width: 60%;
+  padding: 3px;
+  margin-left: 43px;
+  margin-bottom: 15px;
+  border: 1px solid var(--black);
+}
+
+.dob-input {
+  width: 60%;
+  padding: 3px;
+  margin-left: 20px;
+  margin-bottom: 15px;
+  border: 1px solid var(--black);
+}
+
+.form-setup .form-setup-h2-class {
+  margin-bottom: 0%;
+}
+
+.form-setup .form-setup-p-class {
+  margin-top: 0;
+  padding-top: 0%;
+  color: var(--gray);
+  font-weight: normal;
+}
+
+.pronouns {
+  font-weight: normal;
+}
+
+.btn-primary {
+  background-color: var(--black);
+  color: var(--white);
+  width: 48%;
+  border: 1px solid var(--black);
+  padding: 10px 10px;
+  margin-left: 5px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.btn-primary:hover {
+  background-color: var(--violetred);
+  border: 1px solid var(--violetred);
+}
+
+.btn-secondary {
+  background-color: var(--white);
+  color: var(--black);
+  width: 48%;
+  border: 1px solid var(--black);
+  padding: 10px 10px;
+  margin-left: 0px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.btn-secondary:hover {
+  background-color: var(--lightgray);
+}
