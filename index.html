@@ -7,25 +7,16 @@
     <title>KammaInc.com</title>
     <link rel="stylesheet" href="styles.css" />
     <script src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   </head>
   <body class="body-index">
-    <header class="header-index">
-      <div class="headshot">
-        <img src="Headshot.jpg" alt="Raghu's headshot" />
-        <p class="name">Raghu Kamma</p>
-        <p class="job-title">Staff Engineer - Wireless Audio Systems Engineering</p>
-      </div>
-
-      <nav class="navigation-bar">
-        <ul class="nav-list">
-          <li class="navlist-item"><a class="navlist-anchor" href="index.html">Home</a></li>
-          <li class="navlist-item"><a class="navlist-anchor" href="background.html">Background</a></li>
-          <li class="navlist-item"><a class="navlist-anchor" href="projects.html">Projects</a></li>
-          <li class="navlist-item"><a class="navlist-anchor" href="contact.html">Contact</a></li>
-        </ul>
-      </nav>
+    <header>
+      <script>
+        $(function() {
+          $('header').load('navigation.html');
+        });
+        </script>
     </header>
-
     <main class="main">
       <section class="about">
         <h1 class="about-title">Hello! Welcome to Kamma Inc.</h1>
@@ -42,9 +33,12 @@
             I am currently up-skilling my AI & ML skills in the CS department at the Portland State.
         </p>
       </section>
-
-    <footer class="footer">
-      <p>© 2023 Kamma Inc.</p>
+    <footer>
+      <script>
+        $(function() {
+          $('footer').load('footer.html');
+        });
+        </script>
     </footer>
   </body>
 </html>
