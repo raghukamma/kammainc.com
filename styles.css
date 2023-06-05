@@ -13,6 +13,7 @@
   --red: #ff0000;
   --blue: #0000ff;
   --footer: #212121;
+  --rama: #1b8a8a;
 }
 
 body {
@@ -31,7 +32,7 @@ body {
 .site-header {
   padding: 10px;
 }
-/* logo and tagline code below */
+/* CODE FOR LOGO AND TAGLINE IN NAVBAR BELOW */
 .logo-tagline-navbar-container {
   display: table;
   min-width: 100%;
@@ -74,7 +75,7 @@ body {
   vertical-align: middle;
 }
 
-/* navbar items code below */
+/* CODE FOR NAVBAR ITEMS BELOW */
 .navigation-bar {
   display: table-cell;
   text-align: right;
@@ -82,10 +83,10 @@ body {
 }
 
 .nav-list {
-  display: flex; /* Add this line to make the navbar items appear on the same line */
-  justify-content: flex-end; /* Align the navbar items to the right */
-  padding: 0; /* Reset the default padding */
-  margin: 0; /* Reset the default margin */
+  display: flex;
+  justify-content: flex-end;
+  padding: 0;
+  margin: 0;
 }
 
 .navlist-item {
@@ -113,16 +114,9 @@ body {
   padding: 10px 12px;
 }
 
-.header-index img {
-  width: 15rem;
-  height: 15rem;
-  border-radius: 50%;
-  border: 2px solid #fff;
-}
-
-/* banner code below */
+/* CODE FOR BANNER THAT HAS IMAGE, NAME AND GENERAL EXPERIENCE BELOW */
 .banner-main {
-  margin: 50px;
+  margin: 50px 150px;
 }
 .banner {
   display: flex;
@@ -134,16 +128,8 @@ body {
   width: 15rem;
   height: 15rem;
   border-radius: 50%;
-  border: 2px solid var(--red);
+  border: 2px solid var(--blue);
 }
-
-/* .consultant-name,
-.consultant-job-details {
-  display: flex;
-  flex-direction: column; 
-  align-items: flex-start; 
-  padding: 10px 10px;
-} */
 
 .name {
   display: block;
@@ -162,23 +148,41 @@ body {
   padding: 10px 10px;
 }
 
-/* code for index */
-.about-index {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 10px 10px;
-  padding-left: 15%;
-  padding-right: 15%;
+/* CODE FOR BACKGROUND PAGE BELOW */
+
+.background-container {
+  padding-left: 10%;
+  padding-right: 10%;
   margin-left: auto;
   margin-right: auto;
+  max-width: 800px;
 }
+.work-history-title {
+  color: var(--black);
+  /* color: var(--teal); */
+  color: var(--orange);
+}
+.job-titles {
+  font-size: 18px;
+  font-weight: bold;
+  color: var(--blue);
+  margin-bottom: 0px;
+}
+.employment-details {
+  font-size: 16px;
+  font-weight: bold;
+  color: var(--black);
+  margin-top: 0px;
+}
+.job-details-current-minusOne,
+.job-details-current-minusTwo,
+.job-details-current-minusTwo {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+/* CODE FOR PROJECTS PAGE BELOW */
 
-/* code for background */
-
-/* code for projects */
-
-/* Code for styling the contact.html */
+/* CODE FOR CONTACT PAGE BELOW */
 form {
   width: 400px;
 }
@@ -285,7 +289,7 @@ form {
   background-color: var(--lightgray);
 }
 
-/* Footer styling code below */
+/* CODE FOR FOOTER STYLING BELOW */
 .site-footer {
   text-align: left;
   background: var(--footer);
