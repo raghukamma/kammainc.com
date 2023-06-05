@@ -1,4 +1,33 @@
 $(document).ready(function () {
+  const showMoreButton = document.getElementById("show-more-button");
+  const popupOverlay = document.getElementById("popup-overlay");
+  const popupContainer = document.getElementById("popup-container");
+  const closeButton = document.getElementById("close-button");
+  const projectDescription = document.querySelector(".project-description");
+
+  function showPopup() {
+    popupContainer.innerHTML = projectDescription.innerHTML;
+    popupOverlay.style.display = "flex";
+  }
+
+  function hidePopup() {
+    popupOverlay.style.display = "none";
+  }
+
+  showMoreButton.addEventListener("click", showPopup);
+  closeButton.addEventListener("click", hidePopup);
+  popupOverlay.addEventListener("click", function (event) {
+    if (event.target === popupOverlay) {
+      hidePopup();
+    }
+  });
+  document.addEventListener("keydown", function (event) {
+    if (event.key === "Escape") {
+      hidePopup();
+    }
+  });
+
+  // Add the content to the about-paragraph-content div
   if ($("#about-paragraph-content .container").length > 0) {
     return; // Exit the function if the content is already present
   }
