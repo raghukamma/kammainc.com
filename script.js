@@ -7,7 +7,11 @@ $(document).ready(function () {
   const heading1 = $("<h1>")
     .addClass("about-title")
     .text("Hello! Welcome to Kamma Inc.")
-    .css({ "font-weight": "bold", "font-size": "25px" });
+    .css({
+      "font-weight": "bold",
+      "font-size": "25px",
+      color: "var(--orange)",
+    });
   const heading2 = $("<h3>").text("Hi, I'm Raghu Kamma (He/Him)");
 
   const paragraph = $("<p>").addClass("about-paragraph")
@@ -51,11 +55,13 @@ $(document).ready(function () {
   container.css({
     "margin-left": "auto",
     "margin-right": "auto",
+    "padding-left": "10%",
+    "padding-right": "10%",
   });
 
   p.css({
     "text-align": "left",
     margin: "20px auto",
-    width: "500px",
+    "max-width": "800px",
   });
 });

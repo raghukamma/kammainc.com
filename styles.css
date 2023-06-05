@@ -116,6 +116,9 @@ body {
 
 /* CODE FOR BANNER THAT HAS IMAGE, NAME AND GENERAL EXPERIENCE BELOW */
 .banner-main {
+  background: var(--rama);
+}
+.banner-container {
   margin: 50px 150px;
 }
 .banner {
@@ -123,12 +126,14 @@ body {
   align-items: center;
   padding-left: 5%;
   padding-right: 5%;
+  padding-top: 1%;
+  padding-bottom: 1%;
 }
 .headshot img {
   width: 15rem;
   height: 15rem;
   border-radius: 50%;
-  border: 2px solid var(--blue);
+  border: 3px solid var(--orange);
 }
 
 .name {
@@ -136,8 +141,8 @@ body {
   font-size: 40px;
   font-weight: bold;
   margin-left: 100px;
-  margin-bottom: 8px;
-  padding: 10px 10px;
+  margin-bottom: 0px;
+  padding: 0px 10px;
 }
 
 .job-title {
@@ -145,7 +150,7 @@ body {
   font-size: 20px;
   font-weight: bold;
   margin-left: 100px;
-  padding: 10px 10px;
+  padding: 0px 10px;
 }
 
 /* CODE FOR BACKGROUND PAGE BELOW */
