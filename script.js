@@ -1,29 +1,88 @@
 $(document).ready(function () {
-  const showMoreButton = document.getElementById("show-more-button");
-  const popupOverlay = document.getElementById("popup-overlay");
-  const popupContainer = document.getElementById("popup-container");
-  const closeButton = document.getElementById("close-button");
-  const projectDescription = document.querySelector(".project-description");
+  // Project 1
+  const showMoreButton1 = document.getElementById("show-more-button1");
+  const popupOverlay1 = document.getElementById("popup-overlay1");
+  const popupContainer1 = document.getElementById("popup-container1");
+  const closeButton1 = document.getElementById("close-button1");
+  const projectDescription1 = document.querySelector(".project-description1");
 
-  function showPopup() {
-    popupContainer.innerHTML = projectDescription.innerHTML;
-    popupOverlay.style.display = "flex";
+  function showPopup1() {
+    popupContainer1.innerHTML = projectDescription1.innerHTML;
+    popupOverlay1.style.display = "flex";
   }
 
-  function hidePopup() {
-    popupOverlay.style.display = "none";
+  function hidePopup1() {
+    popupOverlay1.style.display = "none";
   }
 
-  showMoreButton.addEventListener("click", showPopup);
-  closeButton.addEventListener("click", hidePopup);
-  popupOverlay.addEventListener("click", function (event) {
-    if (event.target === popupOverlay) {
-      hidePopup();
+  showMoreButton1.addEventListener("click", showPopup1);
+  closeButton1.addEventListener("click", hidePopup1);
+  popupOverlay1.addEventListener("click", function (event) {
+    if (event.target === popupOverlay1) {
+      hidePopup1();
     }
   });
   document.addEventListener("keydown", function (event) {
     if (event.key === "Escape") {
-      hidePopup();
+      hidePopup1();
+    }
+  });
+
+  // Project 2
+  const showMoreButton2 = document.getElementById("show-more-button2");
+  const popupOverlay2 = document.getElementById("popup-overlay2");
+  const popupContainer2 = document.getElementById("popup-container2");
+  const closeButton2 = document.getElementById("close-button2");
+  const projectDescription2 = document.querySelector(".project-description2");
+
+  function showPopup2() {
+    popupContainer2.innerHTML = projectDescription2.innerHTML;
+    popupOverlay2.style.display = "flex";
+  }
+
+  function hidePopup2() {
+    popupOverlay2.style.display = "none";
+  }
+
+  showMoreButton2.addEventListener("click", showPopup2);
+  closeButton2.addEventListener("click", hidePopup2);
+  popupOverlay2.addEventListener("click", function (event) {
+    if (event.target === popupOverlay2) {
+      hidePopup2();
+    }
+  });
+  document.addEventListener("keydown", function (event) {
+    if (event.key === "Escape") {
+      hidePopup2();
+    }
+  });
+
+  // Project 3
+  const showMoreButton3 = document.getElementById("show-more-button3");
+  const popupOverlay3 = document.getElementById("popup-overlay3");
+  const popupContainer3 = document.getElementById("popup-container3");
+  const closeButton3 = document.getElementById("close-button3");
+  const projectDescription3 = document.querySelector(".project-description3");
+
+  function showPopup3() {
+    popupContainer3.innerHTML = projectDescription3.innerHTML;
+    popupOverlay3.style.display = "flex";
+  }
+
+  function hidePopup3() {
+    popupOverlay3.style.display = "none";
+  }
+
+  showMoreButton3.addEventListener("click", showPopup3);
+  closeButton3.addEventListener("click", hidePopup3);
+  popupOverlay3.addEventListener("click", function (event) {
+    if (event.target === popupOverlay3) {
+      hidePopup3();
+    }
+  });
+  document.addEventListener("keydown", function (event) {
+    if (event.key === "Escape") {
+      hidePopup3();
     }
   });
 

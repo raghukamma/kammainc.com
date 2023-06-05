@@ -34,15 +34,18 @@
       <section class="projects-container">
         <h1 class="projects-main-title">Projects</h1>
         <div class="all-projects-list">
-          <div class="project">
+          <!-- Project 1 -->
+          <div id="project1" class="project">
             <p class="project-title">Catan Board Game Generator</p>
-            <p class="project-summary">Catan Randomizer application generates a random game board for
-              the Catan board game detailing which hexagon will have Wood,
-              Ore, Hay, Sheep, Brick and a desert.</p>
-            <div id="popup-overlay">
-              <div id="popup-container">
-                <button id="close-button">Close</button>
-                <p class="project-description">
+            <p class="project-summary">
+              Catan Randomizer application generates a random game board for the
+              Catan board game detailing which hexagon will have Wood, Ore, Hay,
+              Sheep, Brick and a desert.
+            </p>
+            <div id="popup-overlay1">
+              <div id="popup-container1">
+                <button id="close-button1">Close</button>
+                <p class="project-description1">
                   Catan Randomizer application generates a random game board for
                   the Catan board game detailing which hexagon will have Wood,
                   Ore, Hay, Sheep, Brick and a desert. It will also assign a
@@ -54,57 +57,73 @@
                   also, all of our team members are comfortable to work in
                   HTML/JS
                 </p>
-                </div>
               </div>
             </div>
-            <div class="show-more-and-github-buttons">
-              <button class="show-more-button-class" id="show-more-button">
-                Show More
-              </button>
-              <a href="https://github.com/raghukamma/catan-board-generator"
-                ><img
-                  class="github-logo-with-project-link"
-                  src="GitHub_Logo.png"
-                  alt="GitHub Repository"
-              /></a>
+          </div>
+          <div class="show-more-and-github-buttons">
+            <button class="show-more-button-class" id="show-more-button1">
+              Show More
+            </button>
+            <a href="https://github.com/raghukamma/catan-board-generator"
+              ><img
+                class="github-logo-with-project-link"
+                src="GitHub_Logo.png"
+                alt="GitHub Repository"
+            /></a>
+          </div>
+        </div>
+        <!-- Project 2 -->
+        <div id="project2" class="project">
+          <p class="project-title">Survey Application in Python</p>
+          <p class="project-summary">
+            Program reads an input JSON file, parse survey questions, and ask
+            the user (who is taking a survey) a list of those questions and save
+            user's responses in an output JSON file located in the users home
+            directory
+          </p>
+          <div id="popup-overlay2">
+            <div id="popup-container2">
+              <button id="close-button2">Close</button>
+              <p class="project-description2">
+                Project Description: This Python program that reads an input
+                JSON file, parse survey questions, and ask the user (who is
+                taking a survey) a list of those questions and save user's
+                responses in an output JSON file located in the users home
+                directory (irrespective of the OS platform). Assumption: the ID
+                names are unique, but there can be multiple ID names and some
+                surveys do not have ID information. When asking the questions,
+                program should display the organization name along with the
+                survey description before asking the questions. Questions can
+                have predefined answers (multiple choices) or if none are given
+                then any arbitrary input from the user is acceptable. There
+                should be a blank line between the each question and the first
+                question and the header. Save the results for each question in a
+                dictionary using the question ID as the key. Also save the first
+                and last name in the dictionary using “first_name” and
+                “last_name” as the key. If an ID has been requested in the
+                survey, then also include that using the appropriate ID key with
+                their actual ID. The survey questions are in an input JSON file,
+                the python program needs to read that input survey JSON file,
+                parse the information from it. Save the result in another output
+                JSON file that is named as follows:
+                "survey_name"_"last_name"_"first_name"(_"id_if_needed").json If
+                the user runs the survey program again and they have already
+                answered the survey (then appropriate information is already in
+                the configuration file), then display their results to the
+                questions and ask the user to confirm thee information from the
+                file is still correct every time the program runs or if they
+                would like to correct any information and re-submit it. Outline
+                the main reasons for building this project: It was a programming
+                assignment for a course I took recently. It was fun learning how
+                to read/write JSON files in Python. <br />
+                Stack you used: Python 3.x, JSON & OS libraries
+              </p>
             </div>
           </div>
-          <div class="project">
-            <p class="project-title">Survey Application in Python</p>
-            <p class="project-summary">3 lines summary of the project 2</p>
-            <p class="project-description">
-              Project Description: This Python program that reads an input JSON
-              file, parse survey questions, and ask the user (who is taking a
-              survey) a list of those questions and save user's responses in an
-              output JSON file located in the users home directory (irrespective
-              of the OS platform). Assumption: the ID names are unique, but
-              there can be multiple ID names and some surveys do not have ID
-              information. When asking the questions, program should display the
-              organization name along with the survey description before asking
-              the questions. Questions can have predefined answers (multiple
-              choices) or if none are given then any arbitrary input from the
-              user is acceptable. There should be a blank line between the each
-              question and the first question and the header. Save the results
-              for each question in a dictionary using the question ID as the
-              key. Also save the first and last name in the dictionary using
-              “first_name” and “last_name” as the key. If an ID has been
-              requested in the survey, then also include that using the
-              appropriate ID key with their actual ID. The survey questions are
-              in an input JSON file, the python program needs to read that input
-              survey JSON file, parse the information from it. Save the result
-              in another output JSON file that is named as follows:
-              "survey_name"_"last_name"_"first_name"(_"id_if_needed").json If
-              the user runs the survey program again and they have already
-              answered the survey (then appropriate information is already in
-              the configuration file), then display their results to the
-              questions and ask the user to confirm thee information from the
-              file is still correct every time the program runs or if they would
-              like to correct any information and re-submit it. Outline the main
-              reasons for building this project: It was a programming assignment
-              for a course I took recently. It was fun learning how to
-              read/write JSON files in Python. <br />
-              Stack you used: Python 3.x, JSON & OS libraries
-            </p>
+          <div class="show-more-and-github-buttons">
+            <button class="show-more-button-class" id="show-more-button2">
+              Show More
+            </button>
             <a
               href="https://github.com/raghukamma/python-projects/tree/main/ProgrammingAssignment1"
               ><img
@@ -113,31 +132,48 @@
                 alt="GitHub Repository"
             /></a>
           </div>
-          <div class="project">
-            <p class="project-title">
-              Wireless Audio Solutions - Infotainment Systems
-            </p>
-            <p class="project-summary">3 lines summary of the project 3</p>
-            <p class="project-description">
-              Built wireless audio solutions in various infotainment systems to
-              Nissan, General Motors, Ford, Jaguar Land Rover, Mercedes-Benz,
-              Suzuki. Those infotainment systems were deployed in millions of
-              vehicles/year for almost 6 years. Wrote code to implement audio
-              architecture, features, validate the functionality of the audio
-              solution, fixing bugs, managing team and budget for audio
-              solutions component etc. Helping write test automation frameworks,
-              using robotics for test automation was a fun part of this project.
-              Audio design was done using Bluetooh subsystems. <br />
-              Programming Languages: C, C++, Python.
-            </p>
-            <a href="https://github.com/raghukamma"
+        </div>
+        <!-- Project 3 -->
+        <div id="project3" class="project">
+          <p class="project-title">
+            Wireless Audio Solutions - Infotainment Systems
+          </p>
+          <p class="project-summary">
+            Infotainment Touchscreen inside cars have became "must have" for
+            every driver these days and audio systems inside them became even
+            more important for a fun filled drive.
+          </p>
+          <div id="popup-overlay3">
+            <div id="popup-container3">
+              <button id="close-button3">Close</button>
+              <p class="project-description3">
+                Built wireless audio solutions in various infotainment systems
+                to Nissan, General Motors, Ford, Jaguar Land Rover,
+                Mercedes-Benz, Suzuki. Those infotainment systems were deployed
+                in millions of vehicles/year for almost 6 years. Wrote code to
+                implement audio architecture, features, validate the
+                functionality of the audio solution, fixing bugs, managing team
+                and budget for audio solutions component etc. Helping write test
+                automation frameworks, using robotics for test automation was a
+                fun part of this project. Audio design was done using Bluetooh
+                subsystems. <br />
+                Programming Languages: C, C++, Python.
+              </p>
+            </div>
+          </div>
+          <div class="show-more-and-github-buttons">
+            <button class="show-more-button-class" id="show-more-button3">
+              Show More
+            </button>
+            <!-- <a href="https://github.com/raghukamma"
               ><img
                 class="github-logo-with-project-link"
                 src="GitHub_Logo.png"
                 alt="GitHub Repository"
-            /></a>
+            /></a> -->
           </div>
-          <div class="project">
+          <!-- Project 4 -->
+          <div id="project4" class="project">
             <p class="project-title">
               Wireless Key for vehicles - Consumer Electronics
             </p>
@@ -150,7 +186,8 @@
                 alt="GitHub Repository"
             /></a>
           </div>
-          <div class="project">
+          <!-- Project 5 -->
+          <div id="project5" class="project">
             <p class="project-title">
               True Wireless Stereo Earpods & Headsets - Consumer Electronics
             </p>
