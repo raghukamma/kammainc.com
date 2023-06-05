@@ -13,7 +13,7 @@
   --red: #ff0000;
   --blue: #0000ff;
   --footer: #212121;
-  --rama: #1b8a8a;
+  --rama: #409f9f;
 }
 
 body {
@@ -135,6 +135,7 @@ body {
   height: 240px;
   border-radius: 50%;
   border: 3px solid var(--orange);
+  object-fit: cover;
 }
 
 .name {
@@ -213,6 +214,7 @@ body {
   height: 40px;
   margin-right: 10px;
   cursor: pointer;
+  border-radius: 5rem;
 }
 .show-more-button-class:hover {
   background-color: var(--lightgray);
