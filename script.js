@@ -86,6 +86,64 @@ $(document).ready(function () {
     }
   });
 
+  // Project 4
+  const showMoreButton4 = document.getElementById("show-more-button4");
+  const popupOverlay4 = document.getElementById("popup-overlay4");
+  const popupContainer4 = document.getElementById("popup-container4");
+  const closeButton4 = document.getElementById("close-button4");
+  const projectDescription4 = document.querySelector(".project-description4");
+
+  function showPopup4() {
+    popupContainer4.innerHTML = projectDescription4.innerHTML;
+    popupOverlay4.style.display = "flex";
+  }
+
+  function hidePopup4() {
+    popupOverlay4.style.display = "none";
+  }
+
+  showMoreButton4.addEventListener("click", showPopup4);
+  closeButton4.addEventListener("click", hidePopup4);
+  popupOverlay4.addEventListener("click", function (event) {
+    if (event.target === popupOverlay4) {
+      hidePopup4();
+    }
+  });
+  document.addEventListener("keydown", function (event) {
+    if (event.key === "Escape") {
+      hidePopup4();
+    }
+  });
+
+  // Project 5
+  const showMoreButton5 = document.getElementById("show-more-button5");
+  const popupOverlay5 = document.getElementById("popup-overlay5");
+  const popupContainer5 = document.getElementById("popup-container5");
+  const closeButton5 = document.getElementById("close-button5");
+  const projectDescription5 = document.querySelector(".project-description5");
+
+  function showPopup5() {
+    popupContainer5.innerHTML = projectDescription5.innerHTML;
+    popupOverlay5.style.display = "flex";
+  }
+
+  function hidePopup5() {
+    popupOverlay5.style.display = "none";
+  }
+
+  showMoreButton5.addEventListener("click", showPopup5);
+  closeButton5.addEventListener("click", hidePopup5);
+  popupOverlay5.addEventListener("click", function (event) {
+    if (event.target === popupOverlay5) {
+      hidePopup5();
+    }
+  });
+  document.addEventListener("keydown", function (event) {
+    if (event.key === "Escape") {
+      hidePopup5();
+    }
+  });
+
   // Add the content to the about-paragraph-content div
   if ($("#about-paragraph-content .container").length > 0) {
     return; // Exit the function if the content is already present
