@@ -30,7 +30,10 @@ body {
 }
 
 .site-header {
-  padding: 10px;
+  /* padding: 10px; */
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 800px;
 }
 /* CODE FOR LOGO AND TAGLINE IN NAVBAR BELOW */
 .logo-tagline-navbar-container {
@@ -38,11 +41,12 @@ body {
   min-width: 100%;
   table-layout: fixed;
   white-space: nowrap;
-  padding-left: 5%;
-  padding-right: 5%;
+  padding-left: 2%;
+  /* padding-right: 5%; */
+  margin-bottom: 0px;
 }
 .logo-tagline-container {
-  font-family: Lato, sans-serif;
+  font-family: sans-serif;
   font-size: 15pt;
   font-weight: 300;
   line-height: 1.33;
@@ -64,13 +68,11 @@ body {
 }
 .consulting-text {
   display: inline-block;
-  line-height: 1;
-  max-width: 380px;
   outline-color: currentColor;
   outline-style: none;
   outline-width: medium;
   overflow: hidden;
-  padding: 16px 12px;
+  padding: 0 0 16px 0;
   text-decoration: ellipsis;
   vertical-align: middle;
 }
