@@ -166,6 +166,7 @@ body {
 }
 .work-history-title {
   color: var(--orange);
+  text-align: center;
 }
 .job-titles {
   font-size: 18px;
@@ -193,6 +194,7 @@ body {
 }
 .projects-main-title {
   color: var(--orange);
+  text-align: center;
 }
 .project {
   margin-top: 0px;
@@ -282,6 +284,7 @@ body {
   color: var(--orange);
   margin-left: auto;
   margin-right: auto;
+  text-align: center;
 }
 
 .form-setup {

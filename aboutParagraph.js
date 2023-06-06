@@ -12,6 +12,7 @@ $(document).ready(function () {
       "font-weight": "bold",
       "font-size": "25px",
       color: "var(--orange)",
+      "text-align": "center",
     });
   const heading2 = $("<h3>").text("Hi, I'm Raghu Kamma (He/Him)");
 
