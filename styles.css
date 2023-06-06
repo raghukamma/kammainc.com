@@ -217,6 +217,7 @@ body {
   margin-right: 10px;
   cursor: pointer;
   border-radius: 5rem;
+  border: 1px solid var(--black);
 }
 .show-more-button-class:hover {
   background-color: var(--lightgray);
