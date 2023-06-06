@@ -8,15 +8,19 @@
     <link rel="stylesheet" href="styles.css" />
     <script defer src="script.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <link rel="icon" type="image/png" href="kamma-inc-website-favicon-white.png">
+    <link
+      rel="icon"
+      type="image/png"
+      href="kamma-inc-website-favicon-white.png"
+    />
   </head>
   <body>
     <header>
-        <script>
-          $(function() {
-            $('header').load('navigation.html');
-          });
-          </script>
+      <script>
+        $(function () {
+          $("header").load("navigation.html");
+        });
+      </script>
     </header>
     <div id="banner-container"></div>
     <div>
@@ -27,98 +31,63 @@
       </script>
     </div>
     <main>
-      <h1>Contact Form - to get in touch with Raghu Kamma</h1>
-      <div>
-        <form action="#" class="form-setup">
-          <h2 class="form-setup-h2-class">Sign Up Form</h2>
-          <p class="form-setup-p-class">Fill up the items in the form below.</p>
-          <div class="input-boxes">
-            <label for="name">Name: </label>
-            <input type="text" name="name" id="name" class="text-name-input" />
-          </div>
-          <div class="input-boxes">
-            <label for="username">Username:</label>
-            <input
-              type="text"
-              name="username"
-              id="username"
-              class="text-username-input"
-            />
-          </div>
-          <div class="input-boxes">
-            <label for="email">Email:</label>
-            <input type="email" name="email" id="email" class="email-input" />
-          </div>
-          <div class="input-boxes">
-            <label for="password">Password:</label>
-            <input
-              type="password"
-              name="password"
-              id="password"
-              class="password-input"
-            />
-          </div>
-          <div class="input-boxes">
-            <label for="date-of-birth">Date of birth:</label>
-            <input
-              type="date"
-              name="date-of-birth"
-              id="date-of-birth"
-              class="dob-input"
-            />
-          </div>
-          <fieldset class="fieldset-class">
-            <legend>Preferred Pronouns</legend>
-            <div class="pronouns">
-              <input
-                type="radio"
-                name="preferred-pronouns"
-                id="preferred-pronouns-she"
-                value="she/her"
-              />
-              <label for="preferred-pronouns-she">She/Her<z/label>
+      <section class="contact-container">
+        <h1 class="contact-main-title">Get in touch with Raghu Kamma</h1>
+        <div>
+          <form action="#" class="form-setup">
+            <h2 class="form-setup-h2-class">Contact Form</h2>
+            <p class="form-setup-p-class">
+              Submit your details below to hear from Wireless Audio Expert
+            </p>
+            <div class="fields-container">
+              <div class="input-boxes">
+                <label class="label-class" for="name">Name: </label>
+                <input
+                  type="text"
+                  name="name"
+                  id="name"
+                  class="text-input"
+                  placeholder="Enter your name here..."
+                />
+              </div>
+              <div class="input-boxes">
+                <label class="label-class" for="email">Email: </label>
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  class="text-input"
+                  placeholder="Enter your email here..."
+                />
+              </div>
+              <div>
+                <label class="label-class msg-class" for="message"
+                  >Message:
+                </label>
+                <textarea
+                  name="message"
+                  id="message"
+                  cols="30"
+                  rows="10"
+                  class="text-input"
+                  placeholder="Enter your message here..."
+                ></textarea>
+              </div>
             </div>
-            <div class="pronouns">
-              <input
-                type="radio"
-                name="preferred-pronouns"
-                id="preferred-pronouns-he"
-                value="he/him"
-              />
-              <label for="preferred-pronouns-he">He/Him</label>
+            <div class="contact-form-buttons-container">
+              <input type="submit" value="Submit" class="btn" />
+              <input type="reset" value="Reset" class="btn btn-secondary" />
             </div>
-            <div class="pronouns">
-              <input
-                type="radio"
-                name="preferred-pronouns"
-                id="preferred-pronouns-they"
-                value="they/them"
-              />
-              <label for="preferred-pronouns-they">They/Them</label>
-            </div>
-            <div class="pronouns">
-              <input
-                type="radio"
-                name="preferred-pronouns"
-                id="prefer-not-to-say"
-                value="prefer-not-to-say"
-              />
-              <label for="prefer-not-to-say">I prefer not to say</label>
-            </div>
-          </fieldset>
-          <div>
-            <input type="submit" value="Submit" class="btn-primary" />
-            <input type="reset" value="Reset" class="btn-secondary" />
-          </div>
-        </form>
-      </div>
+          </form>
+        </div>
+      </section>
     </main>
     <footer>
-        <script>
-          $(function() {
-            $('footer').load('footer.html');
-          });
-          </script>
-      </footer>
+      <script>
+        $(function () {
+          $("footer").load("footer.html");
+        });
+      </script>
+    </footer>
   </body>
 </html>
