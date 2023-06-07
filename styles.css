@@ -157,7 +157,7 @@ body {
   .menu-toggle-icon {
     width: 35px;
     height: 3px;
-    background-color: #000;
+    background: var(--black);
     margin: 2px;
     display: block;
   }
@@ -257,9 +257,7 @@ body {
   color: var(--black);
   margin-top: 0px;
 }
-.job-details-current-minusOne,
-.job-details-current-minusTwo,
-.job-details-current-minusTwo {
+.job-details {
   margin-top: 0px;
   margin-bottom: 0px;
 }
@@ -308,11 +306,8 @@ body {
   justify-content: flex-start;
   align-items: center;
 }
-#popup-overlay1,
-#popup-overlay2,
-#popup-overlay3,
-#popup-overlay4,
-#popup-overlay5 {
+
+.popup-overlay {
   position: fixed;
   top: 0;
   left: 0;
@@ -324,12 +319,8 @@ body {
   align-items: center;
 }
 
-#popup-container1,
-#popup-container2,
-#popup-container3,
-#popup-container4,
-#popup-container5 {
-  background-color: #fff;
+.popup-container {
+  background-color: var(--white);
   padding: 20px;
   border-radius: 5px;
   max-width: 80%;
@@ -338,11 +329,7 @@ body {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
-#close-button1,
-#close-button2,
-#close-button3,
-#close-button4,
-#close-button5 {
+.close-button {
   position: absolute;
   top: 10px;
   right: 10px;
