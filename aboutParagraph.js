@@ -62,7 +62,7 @@ $(document).ready(function () {
     "padding-left": "5%",
     "padding-right": "5%",
     "text-align": "left",
-    margin: "20px auto",
+    margin: "2% auto",
     "max-width": "800px",
   });
 });
