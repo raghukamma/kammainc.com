@@ -1,5 +1,5 @@
 $(document).ready(function () {
-  if ($("#about-paragraph-content .container").length > 0) {
+  if ($(".about-paragraph-content .container").length > 0) {
     return;
   }
   const container = $("<section>").addClass("container");
@@ -53,7 +53,7 @@ $(document).ready(function () {
         currently up-skilling my CS skills along with learning AI & ML concepts
         in the CS department at the Portland State`);
 
-  $("#about-paragraph-content").append(container);
+  $(".about-paragraph-insert").append(container);
   container.append(heading1);
   container.append(introLine);
   container.append(paragraph);
