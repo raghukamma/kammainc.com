@@ -7,14 +7,22 @@ $(document).ready(function () {
   const p = $("<p>").addClass("bio");
   const heading1 = $("<h1>")
     .addClass("about-title")
-    .text("Hello! Welcome to Kamma Inc.")
+    .text("Welcome to Kamma Inc.")
     .css({
       "font-weight": "bold",
       "font-size": "25px",
       color: "var(--orange)",
       "text-align": "center",
     });
-  const heading2 = $("<h3>").text("Hi, I'm Raghu Kamma (He/Him)");
+  const heading2 = $("<p>")
+    .addClass("about-intro")
+    .text("Hi, I'm Raghu Kamma (He/Him)")
+    .css({
+      "font-weight": "bold",
+      "font-size": "18px",
+      color: "var(--black)",
+      "text-align": "left",
+    });
 
   const paragraph = $("<p>").addClass("about-paragraph")
     .html(`I help build state of the art audio solutions at Skyworks Solutions.
