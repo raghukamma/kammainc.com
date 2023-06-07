@@ -164,6 +164,11 @@ body {
 
   .menu-toggle-checkbox:checked ~ .nav-list {
     display: flex;
+    flex-direction: column;
+  }
+
+  .menu-toggle-checkbox:checked ~ .nav-list .navlist-item {
+    display: block;
   }
 }
 
