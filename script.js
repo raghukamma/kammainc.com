@@ -1,4 +1,7 @@
 $(document).ready(function () {
+  $(".site-header").load("navigation.html");
+  $(".banner-container").load("banner.html");
+  $(".footer-element").load("footer.html");
   // Project 1
   const showMoreButton1 = document.getElementById("show-more-button1");
   const popupOverlay1 = document.getElementById("popup-overlay1");
