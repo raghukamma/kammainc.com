@@ -65,14 +65,22 @@ body {
   margin: 8px auto;
   vertical-align: middle;
 }
+
+/* CODE FOR CONSULTING TEXT */
+.tagline-container {
+  display: block;
+  float: left;
+  text-align: center;
+}
+.consulting-text-anchor {
+  padding: 10px 0;
+}
 .consulting-text {
   display: inline-block;
   outline-color: currentColor;
   outline-style: none;
   outline-width: medium;
   overflow: hidden;
-  padding: 0 0 16px 0;
-  text-decoration: ellipsis;
   vertical-align: middle;
 }
 
