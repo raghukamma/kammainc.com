@@ -1,10 +1,8 @@
 $(document).ready(function () {
-  // // Add the content to the about-paragraph-content div
   if ($("#about-paragraph-content .container").length > 0) {
-    return; // Exit the function if the content is already present
+    return;
   }
   const container = $("<section>").addClass("container");
-  const p = $("<p>").addClass("bio");
   const heading1 = $("<h1>")
     .addClass("about-title")
     .text("Welcome to Kamma Inc.")
@@ -14,12 +12,12 @@ $(document).ready(function () {
       color: "var(--orange)",
       "text-align": "center",
     });
-  const heading2 = $("<p>")
+  const introLine = $("<p>")
     .addClass("about-intro")
     .text("Hi, I'm Raghu Kamma (He/Him)")
     .css({
       "font-weight": "bold",
-      "font-size": "18px",
+      "font-size": "16px",
       color: "var(--black)",
       "text-align": "left",
     });
@@ -55,21 +53,14 @@ $(document).ready(function () {
         currently up-skilling my CS skills along with learning AI & ML concepts
         in the CS department at the Portland State`);
 
-  // Insert the generated content into the desired location
   $("#about-paragraph-content").append(container);
-  container.append(p);
-  p.append(heading1);
-  p.append(heading2);
-  p.append(paragraph);
+  container.append(heading1);
+  container.append(introLine);
+  container.append(paragraph);
 
   container.css({
-    "margin-left": "auto",
-    "margin-right": "auto",
-    "padding-left": "10%",
-    "padding-right": "10%",
-  });
-
-  p.css({
+    "padding-left": "5%",
+    "padding-right": "5%",
     "text-align": "left",
     margin: "20px auto",
     "max-width": "800px",
