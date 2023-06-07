@@ -139,21 +139,22 @@ body {
   border: 3px solid var(--orange);
   object-fit: cover;
 }
-
+.name-and-job-title {
+  margin-left: auto;
+  margin-right: auto;
+}
 .name {
   display: block;
-  font-size: 40px;
+  font-size: 2rem;
   font-weight: bold;
-  margin-left: 100px;
   margin-bottom: 0px;
   padding: 0px 10px;
 }
 
 .job-title {
   display: block;
-  font-size: 20px;
+  font-size: 1.25rem;
   font-weight: bold;
-  margin-left: 100px;
   padding: 0px 10px;
 }
 
