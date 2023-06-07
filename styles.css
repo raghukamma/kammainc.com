@@ -145,6 +145,8 @@ body {
   .menu-toggle-label {
     display: inline-block;
     cursor: pointer;
+    padding-left: 5px;
+    vertical-align: middle;
   }
 
   .menu-toggle-icon,
@@ -153,10 +155,11 @@ body {
   }
 
   .menu-toggle-icon {
-    width: 20px;
-    height: 2px;
+    width: 35px;
+    height: 3px;
     background-color: #000;
     margin: 2px;
+    display: block;
   }
 
   .menu-toggle-checkbox:checked ~ .nav-list {
