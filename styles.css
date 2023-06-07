@@ -157,6 +157,24 @@ body {
   font-weight: bold;
   padding: 0px 10px;
 }
+@media screen and (max-width: 500px) {
+  .banner {
+    flex-direction: column;
+  }
+  .headshot img {
+    width: 200px;
+    height: 200px;
+  }
+  .name-and-job-title {
+    text-align: center;
+  }
+  .name {
+    font-size: 1.5rem;
+  }
+  .job-title {
+    font-size: 1rem;
+  }
+}
 
 /* CODE FOR BACKGROUND PAGE BELOW */
 
