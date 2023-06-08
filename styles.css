@@ -109,7 +109,6 @@ body {
 
 .navlist-item {
   display: inline-block;
-  max-width: 300px;
   overflow: visible;
   position: relative;
   text-align: left;
@@ -117,11 +116,13 @@ body {
   vertical-align: middle;
   white-space: nowrap;
 }
-.navlist-item:hover {
-  background-color: var(--lightgray);
+
+.navlist-anchor:hover {
+  background-color: var(--rama);
+  color: var(--black);
 }
 .navlist-anchor {
-  text-decoration: inherit;
+  text-decoration: none;
   display: inline-block;
   max-width: 240px;
   position: relative;
@@ -130,6 +131,7 @@ body {
   cursor: pointer;
   overflow: hidden;
   padding: 10px 12px;
+  border-radius: 5rem;
 }
 
 /* MEDIA QUERY FOR HAMBURGER MENU */
@@ -183,8 +185,8 @@ body {
 .banner {
   display: flex;
   align-items: center;
-  padding-left: 5%;
-  padding-right: 5%;
+  padding-left: 2.5%;
+  padding-right: 2.5%;
   padding-top: 1%;
   padding-bottom: 1%;
 }
@@ -198,20 +200,18 @@ body {
 .name-and-job-title {
   margin-left: auto;
   margin-right: auto;
+  padding: 2%;
 }
 .name {
   display: block;
   font-size: 2rem;
   font-weight: bold;
-  margin-bottom: 0px;
-  padding: 0px 10px;
 }
 
 .job-title {
   display: block;
   font-size: 1.25rem;
   font-weight: bold;
-  padding: 0px 10px;
 }
 @media screen and (max-width: 500px) {
   .banner {
@@ -236,7 +236,7 @@ body {
 
 .background-container {
   max-width: 800px;
-  padding: 0% 5%;
+  padding: 0% 2%;
   margin: 2% auto;
 }
 .work-history-title {
@@ -262,7 +262,7 @@ body {
 /* CODE FOR PROJECTS PAGE BELOW */
 .projects-container {
   max-width: 800px;
-  padding: 0% 5% 5% 5%;
+  padding: 0% 2%;
   margin: 2% auto;
 }
 .projects-main-title {
@@ -283,6 +283,10 @@ body {
   width: 100px;
   height: 40px;
   margin: 0 10px;
+}
+.github-logo-with-project-link:hover {
+  /* border: 2px solid var(--rama); */
+  border-bottom: 3px solid var(--rama);
 }
 .show-more-button-class {
   background-color: var(--rama);
@@ -339,7 +343,7 @@ body {
 .contact-container {
   margin: 2% auto;
   max-width: 800px;
-  padding: 0% 5% 5% 5%;
+  padding: 0% 2%;
 }
 
 .contact-main-title {
@@ -365,6 +369,7 @@ body {
 
 .form-setup .form-setup-h2-class {
   margin-bottom: 0%;
+  text-align: center;
 }
 
 .form-setup-p-class {
@@ -372,10 +377,11 @@ body {
   padding-top: 0%;
   color: var(--gray);
   font-weight: normal;
+  text-align: center;
 }
 
 .label-class {
-  width: 30%;
+  width: 10%;
   font-weight: bold;
   margin: 10px;
 }
@@ -385,6 +391,28 @@ body {
   padding: 3px;
   margin: 10px;
   border: 1px solid var(--black);
+  font-family: "Open Sans";
+  font-size: 14px;
+}
+
+@media screen and (max-width: 550px) {
+  .input-boxes {
+    flex-direction: column;
+  }
+  .text-input {
+    text-align: center;
+    padding: 0%;
+    margin: 0% 10px;
+    width: 90%;
+    align-items: center;
+  }
+  .label-class {
+    text-align: center;
+    width: 90%;
+  }
+  .fields-container {
+    text-align: center;
+  }
 }
 
 .msg-input {
@@ -394,10 +422,12 @@ body {
 
 .contact-form-buttons-container {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
 }
-
-.btn {
+.empty-element-next-submit-and-reset {
+  width: 25%;
+}
+.btn-primary {
   background-color: var(--rama);
   color: var(--black);
   font-weight: bold;
@@ -412,12 +442,28 @@ body {
   border-radius: 5rem;
 }
 
-.btn:hover {
+.btn-secondary {
+  background-color: var(--white);
+  color: var(--black);
+  font-weight: bold;
+  width: 100px;
+  height: 40px;
+  border: 1px solid var(--black);
+  padding: 10px 10px;
+  margin-left: 5px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  border-radius: 5rem;
+}
+
+.btn-primary:hover {
   background-color: var(--lightgray);
 }
 
 .btn-secondary:hover {
-  background-color: var(--red);
+  background-color: var(--lightgray);
+  border: 1px solid var(--red);
 }
 
 /* CODE FOR FOOTER STYLING BELOW */

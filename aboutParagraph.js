@@ -59,8 +59,8 @@ $(document).ready(function () {
   container.append(paragraph);
 
   container.css({
-    "padding-left": "5%",
-    "padding-right": "5%",
+    "padding-left": "2%",
+    "padding-right": "2%",
     "text-align": "left",
     margin: "2% auto",
     "max-width": "800px",
